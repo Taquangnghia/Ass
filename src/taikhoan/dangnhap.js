@@ -1,6 +1,8 @@
-
+import { signin } from "../api/usere";
+import toastr from "toastr";
+import "toastr/build/toastr.min.css";
 const Login ={
-   print (){
+ async  print (){
        return /* html */ `
    
        <div class="min-h-full flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
@@ -14,12 +16,12 @@ const Login ={
       </h2>
     
     </div>
-    <form class="mt-8 space-y-6" action="#" method="POST">
+    <form class="mt-8 space-y-6"  id="formSignin">
       <input type="hidden" name="remember" value="true">
       <div class="rounded-md shadow-sm -space-y-px">
         <div>
           <label for="email-address" class="sr-only">Email address</label>
-          <input id="email-address" name="email" type="email" autocomplete="email" required class="appearance-none rounded-none relative block w-full px-5   py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm px-10" placeholder="Email address">
+          <input id="email" name="email" type="email" autocomplete="email" required class="appearance-none rounded-none relative block w-full px-5   py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm px-10" placeholder="Email address">
         </div>
         <div>
           <label for="password" class="sr-only">Password</label>
@@ -58,6 +60,35 @@ const Login ={
 </div>
 
        `
-   }
+   },
+   afterRender(){
+    const formSignin = document.querySelector('#formSignin');
+    formSignin.addEventListener('submit', async (e) => {
+        e.preventDefault();
+     
+           
+           try {
+            const { data } = await signin({
+              email: document.querySelector('#email').value,
+              password: document.querySelector('#password').value
+          })
+          if(data){
+            localStorage.setItem('user', JSON.stringify(data.user));
+          if (data.user.role==1) {
+            window.location.href="/navadmin";
+          } else {
+            window.location.href="/";
+          }
+          
+           }
+           } catch (error) {
+             
+           }
+           
+        
+      
+        
+    });
+}
 };
 export default Login;

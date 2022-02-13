@@ -1,0 +1,132 @@
+{
+  "posts": [
+    {
+      "title": "vinpac",
+      "img": "http://res.cloudinary.com/dqyoluczh/image/upload/v1644406435/zkymz8da5qednolyfmhd.png",
+      "desc": "nha dep ",
+      "pice": "10000",
+      "met": "100m",
+      "id": 3
+    },
+    {
+      "id": 4,
+      "title": "dè123",
+      "img": "http://res.cloudinary.com/dqyoluczh/image/upload/v1644477011/yme7no9ttsdumygif4xn.png",
+      "desc": "sdas"
+    }
+  ],
+  "comments": [],
+  "conten": [],
+  "users": [
+    {
+      "email": "nn@123",
+      "password": "$2a$10$sSTHLU7eY01HPlE/kf92ee4JCTRQqUMf0aRgG8T2FpjNeVwKVCwQS",
+      "username": "123@123",
+      "id": 7
+    },
+    {
+      "email": "123@123123",
+      "password": "$2a$10$ZPz8pkdiArgWYymta2UYpezu3SILdwZNyNyumsNvhG3WaAZeL/ymO",
+      "username": "1212@123",
+      "id": 8
+    },
+    {
+      "email": "nghia@111999",
+      "password": "$2a$10$IBJpquvMCCatUJH5NIeqAeqUb2jq9uS5FyE8aDlNQGELE.1sm9DY.",
+      "username": "namthang291098@gmail.comsds",
+      "id": 9
+    },
+    {
+      "email": "minh@123",
+      "password": "$2a$10$AGHpq/HeZyKXQn3Vi2IVJuP5bF5TxjVQf3Fo6.wDKsEmQhjZrDj6.",
+      "username": "namthang291098@gmail.com212",
+      "id": 10
+    },
+    {
+      "email": "nam@1234566",
+      "password": "$2a$10$1xASoKkkJz53qf6/r2zrkuls2VP30Il2MbPbKN9ye/s.T5yR1jdH6",
+      "username": "nam@12345",
+      "id": 11
+    },
+    {
+      "email": "ngghia@123123",
+      "password": "$2a$10$1IZWQ6lacmIYoXtJkuvIqOeDo7mcu5DCv6Yq84h3AXOSfjtH0VFrO",
+      "username": "2131ew23@gnam",
+      "id": 12
+    },
+    {
+      "email": "duong@123",
+      "password": "$2a$10$Ct8747lRDICUJ3QuvvnJaOBX1nWvwI7spSqBDBXHRSMP3MW7V7byC",
+      "username": "duongml@123",
+      "id": 13
+    },
+    {
+      "email": "ml@123",
+      "password": "$2a$10$yu3gn0/XdDJg85iW//YKWOBhhvYoyFlpmJDdRFuvbmximiZwUsQA2",
+      "username": "nghiatqph13235@fpt.edu.vn",
+      "id": 14
+    },
+    {
+      "email": "mlml@123",
+      "password": "$2a$10$07JPKeGUDZv20TRW71rVEOc93XmmfEcV9fsATf8DM3mtVl3Dxdi3m",
+      "username": "nghiatqph13235@fpt.edu.vn",
+      "id": 15
+    },
+    {
+      "email": "mmm@123",
+      "password": "$2a$10$MVFlPlOIFxjeBkJDDKILau.UdiS8t8D8PLV02eeN7vu5RQQ6mG1p2",
+      "username": "nghiatqph13235@fpt.edu.vn",
+      "id": 16
+    },
+    {
+      "email": "hhhh@123",
+      "password": "$2a$10$dn9HquP9ozeU/QaxEpg1ouH2gflftnl.rOqvqhKib5r6xRtlwgOG6",
+      "username": "nghiatqph13235@fpt.edu.vn",
+      "id": 17
+    },
+    {
+      "email": "sdasdas@123",
+      "password": "$2a$10$8PMw2fkjyLERNY4t457So.PSx2ZUpEYhEfjn4tN5e4nWy8o.f5hSm",
+      "username": "213123@gnami",
+      "id": 18
+    },
+    {
+      "email": "sdadasdas@123123",
+      "password": "$2a$10$/L0TmeXqRl6K95QaTTMurOxIFysHm8hLleobwnm4K.LHcEflvKgM.",
+      "username": "nghiatqph13235@fpt.edu.vn",
+      "id": 19
+    },
+    {
+      "email": "sdasmdlkas@123123",
+      "password": "$2a$10$.l6jWsDSjRMBUAO2InLJPuJl4fP0p3Iydt4G0Qhz07OyULmUz/EjC",
+      "username": "nghiatqph13235@fpt.edu.vn",
+      "id": 20
+    },
+    {
+      "email": "nghia@123123",
+      "password": "$2a$10$ujsei39NDayJEKPb.1.KvuSkfNTa0AKOxWmN8dv05e/P4i/PNBPIG",
+      "username": "hung@123123",
+      "id": 21
+    },
+    {
+      "email": "nam123@123",
+      "password": "$2a$10$IAZ8YPZ9VQXcK1THF0CbyeCQN14VGXvJfql3fcIOdY.AxWwIQuX0m",
+      "username": "nam123@123",
+      "id": 22
+    },
+    {
+      "email": "mai123@123",
+      "password": "$2a$10$ZwymKrIiesqSPUFWtUeXTOMwbQ158BKLq9CEqxwg5sRN.Z2I2JZ86",
+      "username": "mai123@123",
+      "role": "0",
+      "id": 23
+    },
+    {
+      "email": "admin@123",
+      "password": "$2a$10$AJZRWSfGpjerIqTD0EkpG.wmAI5QmokqlQFhCXKvfLXn9m67G2E4W",
+      "username": "admin123@123",
+      "role": "1",
+      "id": 24
+    }
+  ]
+}

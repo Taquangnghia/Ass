@@ -1,21 +1,23 @@
 import footer from "./footer";
 import Header from "./header";
+import { get } from "../api/post";
 
 const chiTiet = {
-    print() {
+   async  print(id) {
+       const {data} = await get(id);
         return /* html */ `
         <div>${Header.print()}</div>
     <div class="mt-20 max-w-2xl mx-auto sm:px-6 lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:gap-x-8 ">
             <div class="hidden aspect-w-3 aspect-h-4 rounded-lg overflow-hidden lg:block">
-        <img src="image/home1.jpg" alt="Two each of gray, white, and black shirts laying flat." class="w-full h-full object-center object-cover">
+        <img src="${data.img}" alt="Two each of gray, white, and black shirts laying flat." class="w-full h-full object-center object-cover" alt="">
         </div>
             <div class="mt-6 lg:mt-0 lg:row-span-3">
         <h1 class="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-3xl">
-          Basic Tee 6-Pack
+          ${data.title}
         </h1>
-        <p class="mt-3">Vinhomes Grand Park được định vị là đại đô thị chuẩn mực mới đáng sống nhất tại Việt Nam sau khi đi vào sử dụng. Dự án Vinhomes Grand Park do Vinhomes làm chủ đầu tư (tọa lạc tại phường Long Bình và Long Thạnh Mỹ, TP Thủ Đức) sẽ được phát triển với 3 dòng sản phẩm của Vinhomes:</p>
-        <h2 class="text-1xl font-extrabold tracking-tight text-gray-900 sm:text-1xl mt-5">121.21 - 76.64 tr/m²</h2>
-        <p class="text-3xl text-gray-900 mt-20">120.0000d</p>
+        <p class="mt-3">${data.desc}</p>
+        <h2 class="text-1xl font-extrabold tracking-tight text-gray-900 sm:text-1xl mt-5">${data.met}</h2>
+        <p class="text-3xl text-gray-900 mt-20">${data.pice}</p>
     
         <!-- Reviews -->
         <div class="mt-6">

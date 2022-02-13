@@ -1,8 +1,8 @@
 import { signup } from "../api/usere";
 import toastr from "toastr";
 import "toastr/build/toastr.min.css";
-const DangKy ={
-  async  print () {
+const adminDangKy ={
+  async  print (){
         return /* html */ `
         <div class="min-h-full flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
         <div class="max-w-md w-full space-y-8">
@@ -10,7 +10,7 @@ const DangKy ={
           <a href="/">
             <img class="mx-auto h-12 w-auto" src="/image/house.png" alt="Workflow">
             <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">
-              Đăng Ky
+              Đăng Ky 
             </h2>
           </a>
           
@@ -31,7 +31,9 @@ const DangKy ={
               <input id="password" name="password" type="password" autocomplete="current-password" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Password">
             </div>
             </div>
-            <input id="role"type="radio" value="0" hidden name ="role" checked>
+            
+            <input id="role"type="radio" value="1"  name ="role"  checked> Quan Tri
+            <input id="role"type="radio" value="0"  name ="role" > NGuoi dung
             <div class="flex items-center justify-between">
               <div class="flex items-center">
                 <input id="remember-me" name="remember-me" type="checkbox" class="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded">
@@ -64,30 +66,29 @@ const DangKy ={
         `
     },
     afterRender() {
-      const formSignup = document.querySelector("#formSignup");
-      formSignup.addEventListener("submit", async (e) => {
-          e.preventDefault();
-          try {
-            const { data } = await  signup({
-              username: document.querySelector("#username").value,
-              email: document.querySelector("#email").value,
-              password: document.querySelector("#password").value,
-              role: formSignup.role.value
-            })
-            if (data) {
-              toastr.success("Đăng ký thành công");
-              setTimeout(function () {
-                window.location.href = "/dangnhap";
-              }, 1000)
+        const formSignup = document.querySelector("#formSignup");
+        formSignup.addEventListener("submit", async (e) => {
+            e.preventDefault();
+            try {
+              const { data } = await  signup({
+                username: document.querySelector("#username").value,
+                email: document.querySelector("#email").value,
+                password: document.querySelector("#password").value,
+                role: formSignup.role.value
+              })
+              if (data) {
+                toastr.success("Đăng ký thành công");
+                setTimeout(function () {
+                  window.location.href = "/";
+                }, 1000)
+              }
+            } 
+         
+      catch (error) {
+              toastr.error("Đăng ký thất bại!");
+             
             }
-          } 
-       
-    catch (error) {
-            toastr.error("Đăng ký thất bại!");
-           
-          }
-      });
-  }
+        });
+    }
 };
-
-export default DangKy
+export default adminDangKy;

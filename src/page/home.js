@@ -2,18 +2,21 @@ import footer from "./footer";
 import Header from "./header";
 import Nav from "./nav";
 const home = {
-  print() {
+   async print() {
     return /*html*/ `
     <div>
     ${Header.print()}
-    </div>
+    </div>  
  <div>
- ${Nav.print()}
+  ${await  Nav.print()}
   </div>
   <div>
   ${footer.print()}
   </div>
       `
   },
+  afterRender(){
+    Header.afterRender();
+  }
 };
 export default home;
