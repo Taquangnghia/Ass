@@ -1,12 +1,12 @@
 const Header ={
-    print (){
+   async print (){
        return /* html */ `
        <nav class="bg-white shadow-lg" id="nva">
        <div class="max-w-6xl mx-auto px-4">
          <div class="flex justify-between">
            <div class="flex space-x-7">
              <a class="flex items-center py-4 px-2" href="/">
-               <img class="h-8 w-8 mr-2" src="image/house.png" alt="">
+               <img class="h-8 w-8 mr-2" src="https://res.cloudinary.com/dqyoluczh/image/upload/v1644757139/pcynoy4txejwsnppllke.png" alt="">
                <span class="font-semibold text-gray-500 text-lg">Can Ho tien ich</span>
              </a>
            </div>
@@ -17,7 +17,7 @@ const Header ={
              <a class="py-4 px-2  border-purple-500 border-b-4 text-purple-500 font-semibold" href="/">Home</a>
              <a href="" class="py-4 px-2  border-purple-500 font-semibold hover:text-purple-500 transition duration-300">Sản Phẩm mới</a>
              <a href="" class="py-4 px-2  border-purple-500 font-semibold hover:text-purple-500 transition duration-300">Sản phẩm bán chạy </a>
-             <a href="" class="py-4 px-2  border-purple-500 font-semibold hover:text-purple-500 transition duration-300">Tư vấn</a>
+             <a href="/chitiet/giohang" class="py-4 px-2  border-purple-500 font-semibold hover:text-purple-500 transition duration-300">Gio hang</a>
            </div>
          </div>
        </div>
@@ -59,12 +59,16 @@ const Header ={
     },
     afterRender() {
       const username = document.querySelector("#username");
+
+    if (localStorage.getItem('user')) {
       const logout = document.querySelector("#logout");
       username.innerHTML = JSON.parse(localStorage.getItem('user')).username;
       logout.addEventListener("click", () => {
 
         localStorage.removeItem("user");
       })
+    }
+      
     }
 };
 export default Header;

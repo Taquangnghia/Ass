@@ -5,37 +5,49 @@ const addPost ={
     async print (){
         return /* html */ `
         <div>${Navadmin.print()} </div>
-        <div>
-        <form action="" id="form-add-post">
-            <input type="text"
-                id="title-post"
-                class="border border-black"
-                placeholder="Title post"
-            > 
-            <br />
-            <input type="file"
-                id="img-post"
-                class="border border-black"
-                placeholder="Imager post"
-            > <br />
-            <textarea name="" 
-                id="desc-post" 
-                class="border border-black"
-                cols="30" 
-                rows="10"></textarea>
-                <br />
-                <input type="text"
-                id="pice-post"
-                class="border border-black"
-                placeholder="Title post"
-            > 
-            <br />
-            <input type="text"
-            id="m-post"
-            class="border border-black"
-            placeholder="Title post"
-        > 
-            <button class="bg-blue-500 p-4 inline-block text-white ">Thêm bài viết</button>
+        <div class="bg-purple-300 mt-5 flex p-10 justify-center items-center">
+        <form action="" id="form-add-post" class="w-full max-w-lg">
+        <div class="flex ">
+           <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+           <label for="" class="block uppercase text-xs text-gray-700 font-bold mb-2 tracking-wider"> 
+           Ten San pham
+           </label>
+           <input type="text" class="block w-full border-purple-500 text-gray-700 block py-3 px-4" placeholder="ten" id="title-post">
+           </div>
+
+           <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+           <label for="" class="block uppercase text-xs text-gray-700 font-bold mb-2 tracking-wider"> 
+           So met
+           </label>
+           <input type="text" class="block w-full border-purple-500 text-gray-700 block py-3 px-4" placeholder="met" id="m-post">
+           </div>
+           </div>
+
+           <div class="flex mx-3 mb-6 mt-6">
+           <div class="w-full px-3">
+           <label class="block text-xs text-gray-700 font-bold mb-2 tracking-wider">Giatien</label>
+           <input type="text" class="block w-full border-purple-500 text-gray-700 block py-3 px-4" placeholder="tien" id="pice-post">
+           </div>
+           </div>
+           <div class="flex mx-3 mb-6 mt-6">
+           <div class="w-full px-3">
+           <label class="block text-xs text-gray-700 font-bold mb-2 tracking-wider">Anh</label>
+           <input type="file" class="block w-full border-purple-500 text-gray-700 block py-3 px-4" placeholder="tien"id="img-post">
+           </div>
+           </div>
+           
+           <div class="flex mx-3 mb-6 mt-6">
+           <div class="w-full px-3">
+           <label class="block text-xs text-gray-700 font-bold mb-2 tracking-wider">Thong tin san pham</label>
+           <textarea type="text" class="block w-full border-purple-500 text-gray-700 block py-3 px-4 h-48" placeholder="hon" id="desc-post"></textarea>
+         
+           </div>
+           </div>
+            <div class="md:flex md:items-center">
+                 <div class="md:w-1/3">
+                 <button class="shadow bg-purple-400 text-white py-2 px-4 rounded mx-5">Sett</button>
+                </div>
+            </div>
         </form>
         </div>
         `;
@@ -69,6 +81,7 @@ const addPost ={
                 pice:document.querySelector("#pice-post").value,
                 met:document.querySelector("#m-post").value,
             });
+            window.location.href="/admin/hienthi";
             
         })
     }

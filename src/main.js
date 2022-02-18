@@ -9,6 +9,7 @@ import home from "./page/home";
 import DangKy from "./taikhoan/dangky";
 import Login from "./taikhoan/dangnhap";
 import taiKhoan from "./admin/taikhoan";
+import gioHang from "./page/giohang";
 const router = new Navigo("/", { linksSelector: "a" });
 const render = async (content,id) =>{
     document.querySelector("#main").innerHTML = await content.print(id);
@@ -42,6 +43,10 @@ router.on({
     "/chitiet/:id" :({data})=>{
         render(chiTiet,data.id);
     },
+    "/chitiet/giohang":()=>{
+        render(gioHang);
+    },
+    /// admin
     "/admin/add":() =>{
         render(addPost);
     },
@@ -55,7 +60,7 @@ router.on({
     "/navadmin":()=>{
         render(Navadmin);
     },
-    "/addmin/dangky":()=>{
+    "/admin/dangky":()=>{
         render(adminDangKy);
     },
     "/admin/taikhoan":()=>{

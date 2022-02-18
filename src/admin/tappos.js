@@ -41,6 +41,8 @@ const TablePost ={
           })
         });
       },
+      
+      
         
 };
 export default TablePost;

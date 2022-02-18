@@ -4,9 +4,9 @@ import Nav from "./nav";
 const home = {
    async print() {
     return /*html*/ `
-    <div>
-    ${Header.print()}
-    </div>  
+    <header>
+    ${await Header.print()}
+    </header>  
  <div>
   ${await  Nav.print()}
   </div>

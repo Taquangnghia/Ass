@@ -52,7 +52,7 @@ const taiKhoan ={
             });
         });
         
-    },
+    }
     
 };
 export default taiKhoan;

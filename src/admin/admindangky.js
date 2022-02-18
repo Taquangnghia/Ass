@@ -7,10 +7,10 @@ const adminDangKy ={
         <div class="min-h-full flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
         <div class="max-w-md w-full space-y-8">
           <div>
-          <a href="/">
+          <a href="/admin/hienthi">
             <img class="mx-auto h-12 w-auto" src="/image/house.png" alt="Workflow">
             <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">
-              Đăng Ky 
+              Đăng Ky Tài khoản
             </h2>
           </a>
           
@@ -19,12 +19,12 @@ const adminDangKy ={
             <input type="hidden" name="remember" value="true">
             <div class="rounded-md shadow-sm -space-y-px">
               <div>
-                <label for="email-address" class="sr-only">Name</label>
-                <input id="username" name="email" type="email" autocomplete="email" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Name">
+                <label for="email-address" class="sr-only">Email</label>
+                <input id="email" name="email" type="email" autocomplete="email" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Email">
               </div>
               <div>
-                <label for="password" class="sr-only">email</label>
-                <input id="email" name="email" type="email" autocomplete="current-password" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Email">
+                <label for="password" class="sr-only">Name</label>
+                <input id="username" name="email" type="email" autocomplete="current-password" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Name">
               </div>
               <div>
               <label for="password" class="sr-only">Password</label>
@@ -32,8 +32,8 @@ const adminDangKy ={
             </div>
             </div>
             
-            <input id="role"type="radio" value="1"  name ="role"  checked> Quan Tri
-            <input id="role"type="radio" value="0"  name ="role" > NGuoi dung
+            <input id="role"type="radio" value="1"  name ="role"  checked> Quản Trị
+            <input id="role"type="radio" value="0"  name ="role" > Người dùng
             <div class="flex items-center justify-between">
               <div class="flex items-center">
                 <input id="remember-me" name="remember-me" type="checkbox" class="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded">

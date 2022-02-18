@@ -1,12 +1,16 @@
 import footer from "./footer";
 import Header from "./header";
 import { get } from "../api/post";
+import { $ } from "../utilis";
+import { addToCart } from "../utilis/cart";
+import "toastr/build/toastr.min.css";
+import toastr from "toastr";
 
 const chiTiet = {
    async  print(id) {
        const {data} = await get(id);
         return /* html */ `
-        <div>${Header.print()}</div>
+        ${await Header.print()}
     <div class="mt-20 max-w-2xl mx-auto sm:px-6 lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:gap-x-8 ">
             <div class="hidden aspect-w-3 aspect-h-4 rounded-lg overflow-hidden lg:block">
         <img src="${data.img}" alt="Two each of gray, white, and black shirts laying flat." class="w-full h-full object-center object-cover" alt="">
@@ -21,13 +25,22 @@ const chiTiet = {
     
         <!-- Reviews -->
         <div class="mt-6">
-          <button type="submit" class="mt-10 w-full bg-indigo-600 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Add to bag</button>
+          <button id="btnAddToCart" type="submit" class="mt-10 w-full bg-indigo-600 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Add to bag</button>
 
         </div>
             </div>
     </div>
    <div>${footer.print()}</div>
         `
-    }
+    },
+    afterRender(id){
+      $("#btnAddToCart").addEventListener('click', async () => {
+          const { data } = await get(id);
+          addToCart({...data, quantity: 1}, function(){
+              toastr.success(`Thêm  ${data.title} vào giỏ hàng thành công!`)
+          })
+      });
+      Header.afterRender();
+  }
 };
 export default chiTiet;

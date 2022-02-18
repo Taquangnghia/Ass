@@ -26,6 +26,7 @@ const HienThi ={
     afterRender() {
         TablePost.afterRender();
       
-      }
+      },
+      
 };
 export default HienThi;
