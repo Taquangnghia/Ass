@@ -1,6 +1,7 @@
 import { $ } from "../utilis";
 import { decreaseItemInCart, increaseItemInCart, removeItemInCart } from "../utilis/cart";
 import { reRender } from "../utilis/rerender";
+import footer from "./footer";
 import Header from "./header";
 
 const gioHang = {
@@ -9,8 +10,8 @@ const gioHang = {
         const cart = JSON.parse(localStorage.getItem('cart'));
         return  /* html*/`
        ${await Header.print()}
-            <table class="w-full text-left bg-purple-300 mt-5  justify-center items-cente">
-                <thead>
+            <table class="w-full text-left  mt-10 justify-center items-cente mb-5">
+                <thead class="">
                     <tr>
                         <th>Tên sản phẩm</th>
                         <th>Price</th>
@@ -22,7 +23,7 @@ const gioHang = {
                     ${cart.map(item => /*html*/ `
                         <tr>
                             <td>${item.title}</td>
-                            <td class="">${item.pice}
+                            <td class="">${item.pice} VNĐ
                                 
                             </td>
                             <td>
@@ -34,13 +35,18 @@ const gioHang = {
                                 <button data-id="${item.id}" class="btn remove border bg-red-500 px-4 py-3 text-white">Remove</button>
                                 <p hidden>${tong += item.pice * item.quantity}</p>
                             </td>
+                           
                         </tr>
                     `).join("")}
                 </tbody>
                 <tfoot  class="pt-10">
                     <tr class="pt-10"><td colspan="2" class="text-right pt-10">Tổng là:${tong}</td></tr>
+                   
                 </tfoot>
+               
             </table>
+            <button class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10">Thanh Toán</button>
+            ${footer.print()}
         `
     },
     afterRender(){

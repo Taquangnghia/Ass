@@ -1,49 +1,117 @@
 {
   "posts": [
     {
-      "title": "vinpac123",
-      "img": "http://res.cloudinary.com/dqyoluczh/image/upload/v1644840097/hiuuhklkrjmfifdrfwtt.jpg",
-      "desc": "Theo văn hóa Á Đông, số 9 là con số may mắn tượng trưng cho thành công và viên mãn. Chính vì vậy GP. INVEST mong muốn dự án này sẽ là nơi định cư lý tưởng để tạo lên sự thịnh vượng cho cư dân nơi này. Không chỉ mang đến một không gian sống hợp phong thủy, The Nine Tower còn có vị trí đắc địa là cầu nối, điểm nút giao thông quan trọng trong hệ thống giao thông thành phố Hà Nội",
+      "id": "7",
+      "title": "Chung cư The Matrix One Mễ Trì",
+      "img": "http://res.cloudinary.com/dqyoluczh/image/upload/v1645263898/jdjyvsrzbqy5b3kxjmeh.jpg",
+      "desc": "   Ngã Tư Mễ Trì - Lê Quang Đạo\nChung cư The Matrix One Mễ Trì tọa lạc tại nút giao giữa đường Mễ Trì và Lê Quang Đạo thuộc quận Nam Từ Liêm. Dự án do MIKGroup làm đơn vị phát triển dư án này.",
       "pice": "100000000",
+      "met": "55m²",
+      "loai": "chungcu"
+    },
+    {
+      "id": "8",
+      "title": "vinpac",
+      "img": "http://res.cloudinary.com/dqyoluczh/image/upload/v1645263986/igyjwqsndhtixnwjpcfs.jpg",
+      "desc": "      Theo văn hóa Á Đông, số 9 là con số may mắn tượng trưng cho thành công và viên mãn. Chính vì vậy GP. INVEST mong muốn dự án này sẽ là nơi định cư lý tưởng để tạo lên sự thịnh vượng cho cư dân nơi này. Không chỉ mang đến ",
+      "pice": "1000000",
+      "met": "100m²",
+      "loai": "chungcu"
+    },
+    {
+      "id": "9",
+      "title": "Chung cư Mipec Rubik 360 ",
+      "img": "http://res.cloudinary.com/dqyoluczh/image/upload/v1645264029/idp17prgbptnhkquhyif.jpg",
+      "desc": "   122-124 Xuân Thủy\n- Tên thương mại: Mipec Rubik 360 (Mipec Xuân Thủy) - Vị trí: Số 122, 124 Xuân Thủy, P. Dịch Vọng Hậu, Q. Cầu Giấy, TP.Hà Nội - Chủ đầu tư: Công ty cổ phần thương mại và dịch vụ Xuân Thủy (Công ty con thuộc: Công ty Cổ phần hóa dầu Quân đội -...",
+      "pice": "1000000000",
+      "met": "150m²",
+      "loai": "chungcu"
+    },
+    {
+      "id": "10",
+      "title": "The Manor Central Park",
+      "img": "http://res.cloudinary.com/dqyoluczh/image/upload/v1645264050/ax4ggn4lp2t3z4g8hx1e.jpg",
+      "desc": " Bán căn shophouse ngoại giao The Manor Central Park. Tổng giá 27,5 tỷ giá hợp đồng 2x tỷ. Căn thuộc block 16TM1 hướng đẹp, trước nhà là công viên nội khu. Bao giá rẻ nhất thị trường. Căn ngoại giao nhưng vẫn được hưởng chiết khấu và chính sách bình thường của chủ đầu tư. Đầu tư mua là thắng",
+      "pice": "100000000",
+      "met": "75 m²",
+      "loai": "bietthu"
+    },
+    {
+      "id": "Ex-N524",
+      "title": "Vinhomes Green Bay",
+      "img": "http://res.cloudinary.com/dqyoluczh/image/upload/v1645409310/bqfun6vqumybfwbrwigg.jpg",
+      "desc": "  Vinhomes Green Bay là một trong những sản phẩm BĐS nổi bật khu vực phía Tây Hà Nội do tập đoàn Vingroup đầu tư và triển khai. Dự án được định hướng trở thành tổ hợp đô thị ",
+      "pice": "500000000",
+      "met": "70m²",
+      "loai": "bietthu"
+    },
+    {
+      "id": "15Y7J1x",
+      "title": "Le Grand Jardin",
+      "img": "http://res.cloudinary.com/dqyoluczh/image/upload/v1645409397/knsfprsd5xxuznyhiwgk.jpg",
+      "desc": "  Quý vị đang xem nội dung tin rao \"Kênh chủ đầu tư Le Grand Jardin, nhận nhà ngay chỉ từ 500 tr /2PN, 700 tr/3PN, vay 0%, Ck 7,5%\" - Mã tin 32283789. Mọi thông ",
+      "pice": "180000000",
+      "met": "84 m²",
+      "loai": "bietthu"
+    },
+    {
+      "title": "vinpac",
+      "img": "http://res.cloudinary.com/dqyoluczh/image/upload/v1645414395/g79wz3py6wbedsivciqd.jpg",
+      "desc": "231231",
+      "pice": "10000",
       "met": "100m",
-      "id": "7"
-    },
-    {
-      "title": "vinpac123",
-      "img": "http://res.cloudinary.com/dqyoluczh/image/upload/v1644840136/qpynykjkwvx8gqmiz8ks.jpg",
-      "desc": "Theo văn hóa Á Đông, số 9 là con số may mắn tượng trưng cho thành công và viên mãn. Chính vì vậy GP. INVEST mong muốn dự án này sẽ là nơi định cư lý tưởng để tạo lên sự thịnh vượng cho cư dân nơi này. Không chỉ mang đến một không gian sống hợp phong thủy, The Nine Tower còn có vị trí đắc địa là cầu nối, điểm nút giao thông quan trọng trong hệ thống giao thông thành phố Hà Nội",
-      "pice": "1000000",
-      "met": "100m-199",
-      "id": "8"
-    },
-    {
-      "title": "vinpac123",
-      "img": "http://res.cloudinary.com/dqyoluczh/image/upload/v1644840300/bt8osfyyfddtik2nmsft.jpg",
-      "desc": "Theo văn hóa Á Đông, số 9 là con số may mắn tượng trưng cho thành công và viên mãn. Chính vì vậy GP. INVEST mong muốn dự án này sẽ là nơi định cư lý tưởng để tạo lên sự thịnh vượng cho cư dân nơi này. Không chỉ mang đến một không gian sống hợp phong thủy, The Nine Tower còn có vị trí đắc địa là cầu nối, điểm nút giao thông quan trọng trong hệ thống giao thông thành phố Hà Nội",
-      "pice": "1000000",
-      "met": "100m-199",
-      "id": "9"
-    },
-    {
-      "title": "vinpac123",
-      "img": "http://res.cloudinary.com/dqyoluczh/image/upload/v1644840320/ipii0pzrykqpfhhzbebt.jpg",
-      "desc": "Theo văn hóa Á Đông, số 9 là con số may mắn tượng trưng cho thành công và viên mãn. Chính vì vậy GP. INVEST mong muốn dự án này sẽ là nơi định cư lý tưởng để tạo lên sự thịnh vượng cho cư dân nơi này. Không chỉ mang đến một không gian sống hợp phong thủy, The Nine Tower còn có vị trí đắc địa là cầu nối, điểm nút giao thông quan trọng trong hệ thống giao thông thành phố Hà Nội",
-      "pice": "100000000",
-      "met": "100m-199",
-      "id": "10"
+      "loai": "bietthu",
+      "id": "LJykLu0"
     }
   ],
   "comments": [],
   "conten": [],
   "users": [
-   
-    
     {
       "email": "admin@123",
       "password": "$2a$10$AJZRWSfGpjerIqTD0EkpG.wmAI5QmokqlQFhCXKvfLXn9m67G2E4W",
       "username": "admin123@123",
       "role": "1",
       "id": 24
+    },
+    {
+      "email": "nghiatqph13235@fpt.edu.vn",
+      "password": "$2a$10$0waTrgyiKTmkqjDmdQ/IVe4hySuFXu855C4pPBaThBaOy3MFvtShO",
+      "username": "nghiatqph13235@fpt.edu.vn",
+      "role": "0",
+      "id": 25
+    },
+    {
+      "email": "nghia@123123",
+      "password": "$2a$10$ANEByaFZU60lYTQBqjJ6FuXzTT6dOmCDs2QL3zlb3pFETzYIW0Mni",
+      "username": "nghia@123123",
+      "role": "0",
+      "id": 26
+    },
+    {
+      "email": "tuan@gmail.com",
+      "password": "$2a$10$uP4zkL97LB5t4rWRKyrJxeHW9WC.EG4AQofQ7KH6CQe.7vKWV7W0G",
+      "username": "tuan@123",
+      "role": "0",
+      "id": 27
+    }
+  ],
+  "postCates": [
+    {
+      "name": "nghia123",
+      "id": 5
+    },
+    {
+      "name": "tour 3",
+      "id": 6
+    },
+    {
+      "name": "tour 3",
+      "id": 7
+    },
+    {
+      "name": "12323123",
+      "id": 8
     }
   ]
 }

@@ -10,6 +10,11 @@ import DangKy from "./taikhoan/dangky";
 import Login from "./taikhoan/dangnhap";
 import taiKhoan from "./admin/taikhoan";
 import gioHang from "./page/giohang";
+import chungCu from "./page/chungcu";
+import bietThu from "./page/bietthu";
+import viDu from "./page/vidu";
+import viDu1 from "./page/vidu1";
+import viDu2 from "./page/vidu2";
 const router = new Navigo("/", { linksSelector: "a" });
 const render = async (content,id) =>{
     document.querySelector("#main").innerHTML = await content.print(id);
@@ -46,6 +51,12 @@ router.on({
     "/chitiet/giohang":()=>{
         render(gioHang);
     },
+    "/chungcu":()=>{
+        render(chungCu);
+    },
+    "/bietthu":()=>{
+        render(bietThu);
+    },  
     /// admin
     "/admin/add":() =>{
         render(addPost);
@@ -65,6 +76,16 @@ router.on({
     },
     "/admin/taikhoan":()=>{
         render(taiKhoan);
+    },
+    "/vidu":()=>{
+        render(viDu);
+    },
+    "/vidu1":()=>{
+        render(viDu1);
+    },
+    "/vidu2/:id/edit":({data})=>{
+        render(viDu2,data.id);
     }
+    
 });
 router.resolve();

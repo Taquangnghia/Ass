@@ -8,7 +8,13 @@ const TablePost ={
     async print (){
         const{data} = await getAll();
         return /* html */ `
-        <div>${Navadmin.print()} </div>
+        <div>${Navadmin.print()}
+        <header class="bg-white shadow">
+        <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+          <h1 class="text-3xl font-bold text-gray-900">Thông tin sản phẩm </h1>
+        </div>
+      </header>
+         </div>
         ${data.map((post,index)=> /* html */ `
         <tr>
                 <td>${index + 1}</td>

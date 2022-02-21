@@ -11,9 +11,9 @@ const HienThi ={
                         <th>STT</th>
                         <th>Image</th>
                         <th>Title</th>
-                        <th>Noi Dung</th>
-                        <th>gia tien</th>
-                        <th>so met</th>
+                        <th>Thông tin sản phẩm</th>
+                        <th>Giá tiền</th>
+                        <th>số mét</th>
                     </tr>
                     <tbody id="table-news">
                         ${await TablePost.print()}

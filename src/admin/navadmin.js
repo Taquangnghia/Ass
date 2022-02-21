@@ -12,9 +12,12 @@ const Navadmin ={
                 <div class="ml-10 flex items-baseline space-x-4">
                   <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                   <a href="/admin/dangky" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Đăng ký tài khoản</a>
-                  <a href="/admin/add" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Add</a>
-                  <a href="/admin/hienthi" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Thông tin San pham</a>
-                  <a href="/admin/taikhoan" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Tai Khoan dk</a>
+                  <a href="/admin/add" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Thêm sản phẩm</a>
+                  <a href="/admin/hienthi" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Thông tin sản phẩm</a>
+                  <a href="/admin/taikhoan" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Tài Khoản</a>
+                  <a href="/" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Trang chủ</a>
+
+                 
                 </div>
               </div>
             </div>

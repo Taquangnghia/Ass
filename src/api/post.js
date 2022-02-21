@@ -19,3 +19,7 @@ export const update = (post) => {
     const url = `/posts/${post.id}`;
     return instance.put(url, post);
 }
+export const getloai = (value)=>{
+    const url = `/posts?loai=${value}`;
+    return instance.get(url);
+}

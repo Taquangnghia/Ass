@@ -5,12 +5,18 @@ const taiKhoan ={
  async   print (){
     const{data} = await getAll();
         return /* html */ `
-        <div>${Navadmin.print()} </div>
+        <div>${Navadmin.print()} 
+        <header class="bg-white shadow">
+        <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+          <h1 class="text-3xl font-bold text-gray-900">Tài khoản Đăng ký</h1>
+        </div>
+      </header>
+        </div>
         <div>
         <table class="w-full">
             <thead>
             <tr class="text-left">
-                <th>STT</th>
+                <th class="">STT</th>
                 <th>Email</th>
                 <th>Ten</th>
                 <th>Trang thai</th>
