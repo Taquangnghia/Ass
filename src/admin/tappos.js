@@ -32,7 +32,7 @@ const TablePost ={
             ).join("")} 
         `;
     },
-    // xoa
+    
     afterRender() {
         const buttons = document.querySelectorAll('.btn');   
         buttons.forEach(button => {
