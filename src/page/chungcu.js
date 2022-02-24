@@ -1,14 +1,16 @@
-import { getloai } from "../api/post";
+
 import Header from "./header";
 import footer from "./footer";
+import { getCate } from "../api/danhmuc";
 const chungCu={
- async print(){
-     const {data} = await getloai('chungcu');
-     console.log (data);
+ async print(id){
+  const {data} = await getCate(id);
+
+     
         return /*html*/ `
         ${await Header.print()}
         <div class="grid p-10 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-5">
-        ${data.map((post)=> /* html */ `
+        ${data.posts.map((post)=> /* html */ `
         <div class="rounded  shadow-lg">
         <a href="/chitiet/${post.id}">
           <img class="w-full" src="${post.img}" alt="">

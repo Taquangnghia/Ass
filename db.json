@@ -7,7 +7,8 @@
       "desc": "   Ngã Tư Mễ Trì - Lê Quang Đạo\nChung cư The Matrix One Mễ Trì tọa lạc tại nút giao giữa đường Mễ Trì và Lê Quang Đạo thuộc quận Nam Từ Liêm. Dự án do MIKGroup làm đơn vị phát triển dư án này.",
       "pice": "100000000",
       "met": "55m²",
-      "loai": "chungcu"
+      "loai": "chungcu",
+      "postCateId": 1
     },
     {
       "id": "8",
@@ -16,7 +17,8 @@
       "desc": "      Theo văn hóa Á Đông, số 9 là con số may mắn tượng trưng cho thành công và viên mãn. Chính vì vậy GP. INVEST mong muốn dự án này sẽ là nơi định cư lý tưởng để tạo lên sự thịnh vượng cho cư dân nơi này. Không chỉ mang đến ",
       "pice": "1000000",
       "met": "100m²",
-      "loai": "chungcu"
+      "loai": "chungcu",
+      "postCateId": 2
     },
     {
       "id": "9",
@@ -25,7 +27,8 @@
       "desc": "   122-124 Xuân Thủy\n- Tên thương mại: Mipec Rubik 360 (Mipec Xuân Thủy) - Vị trí: Số 122, 124 Xuân Thủy, P. Dịch Vọng Hậu, Q. Cầu Giấy, TP.Hà Nội - Chủ đầu tư: Công ty cổ phần thương mại và dịch vụ Xuân Thủy (Công ty con thuộc: Công ty Cổ phần hóa dầu Quân đội -...",
       "pice": "1000000000",
       "met": "150m²",
-      "loai": "chungcu"
+      "loai": "chungcu",
+      "postCateId": 1
     },
     {
       "id": "10",
@@ -34,7 +37,8 @@
       "desc": " Bán căn shophouse ngoại giao The Manor Central Park. Tổng giá 27,5 tỷ giá hợp đồng 2x tỷ. Căn thuộc block 16TM1 hướng đẹp, trước nhà là công viên nội khu. Bao giá rẻ nhất thị trường. Căn ngoại giao nhưng vẫn được hưởng chiết khấu và chính sách bình thường của chủ đầu tư. Đầu tư mua là thắng",
       "pice": "100000000",
       "met": "75 m²",
-      "loai": "bietthu"
+      "loai": "bietthu",
+      "postCateId": 2
     },
     {
       "id": "Ex-N524",
@@ -43,7 +47,8 @@
       "desc": "  Vinhomes Green Bay là một trong những sản phẩm BĐS nổi bật khu vực phía Tây Hà Nội do tập đoàn Vingroup đầu tư và triển khai. Dự án được định hướng trở thành tổ hợp đô thị ",
       "pice": "500000000",
       "met": "70m²",
-      "loai": "bietthu"
+      "loai": "bietthu",
+      "postCateId": 2
     },
     {
       "id": "15Y7J1x",
@@ -52,7 +57,8 @@
       "desc": "  Quý vị đang xem nội dung tin rao \"Kênh chủ đầu tư Le Grand Jardin, nhận nhà ngay chỉ từ 500 tr /2PN, 700 tr/3PN, vay 0%, Ck 7,5%\" - Mã tin 32283789. Mọi thông ",
       "pice": "180000000",
       "met": "84 m²",
-      "loai": "bietthu"
+      "loai": "bietthu",
+      "postCateId": 2
     },
     {
       "title": "vinpac",
@@ -61,10 +67,32 @@
       "pice": "10000",
       "met": "100m",
       "loai": "bietthu",
-      "id": "LJykLu0"
+      "id": "LJykLu0",
+      "postCateId": 1
     }
   ],
-  "comments": [],
+  "comments": [
+    {
+      "img": "http://res.cloudinary.com/dqyoluczh/image/upload/v1645621372/mimi3zt3jy90opjeawzt.jpg",
+      "name": "nghia1111",
+      "id": 5
+    },
+    {
+      "img": "http://res.cloudinary.com/dqyoluczh/image/upload/v1645621844/caucksr1igu5paa01rbt.jpg",
+      "name": "nghia",
+      "id": 6
+    },
+    {
+      "img": "http://res.cloudinary.com/dqyoluczh/image/upload/v1645621871/uqmdilxew4ct6c11bjyp.jpg",
+      "name": "tuan",
+      "id": 7
+    },
+    {
+      "img": "http://res.cloudinary.com/dqyoluczh/image/upload/v1645622927/g36hlgl7c4grcyvzfqgm.jpg",
+      "name": "mai111",
+      "id": 8
+    }
+  ],
   "conten": [],
   "users": [
     {
@@ -98,20 +126,12 @@
   ],
   "postCates": [
     {
-      "name": "nghia123",
-      "id": 5
+      "id": 1,
+      "name": "chung cu"
     },
     {
-      "name": "tour 3",
-      "id": 6
-    },
-    {
-      "name": "tour 3",
-      "id": 7
-    },
-    {
-      "name": "12323123",
-      "id": 8
+      "id": 2,
+      "name": "biet thu"
     }
   ]
 }

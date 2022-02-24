@@ -1,5 +1,8 @@
+import { getAllpostCates } from "../api/danhmuc";
+
 const Header ={
    async print (){
+     const{data} = await getAllpostCates(); 
        return /* html */ `
        <nav class="bg-white shadow-lg" id="nva">
        <div class="max-w-6xl mx-auto px-4">
@@ -17,8 +20,12 @@ const Header ={
            
            <div class="hidden items-center md:flex space-x-1">
              <a class="py-4 px-2  border-purple-500 border-b-4 text-purple-500 font-semibold" href="/">Home</a>
-             <a href="/bietthu" class="py-4 px-2  border-purple-500 font-semibold hover:text-purple-500 transition duration-300">Biệt thự</a>
-             <a href="/chungcu" class="py-4 px-2  border-purple-500 font-semibold hover:text-purple-500 transition duration-300">Chung cư</a>
+             
+             ${data.map((post)=> /*html */ `
+             <a href="/chungcu/${post.id}" class="py-4 px-2  border-purple-500 font-semibold hover:text-purple-500 transition duration-300">${post.name}</a>
+             `
+              ).join("")}
+           
              <a href="/chitiet/giohang" class="py-4 px-2  border-purple-500 font-semibold hover:text-purple-500 transition duration-300">Giỏ hàng</a>
            </div>
          </div>

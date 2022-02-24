@@ -11,11 +11,13 @@ const Navadmin ={
               <div class="hidden md:block">
                 <div class="ml-10 flex items-baseline space-x-4">
                   <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                  <a href="/admin/danhmuc" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Danh muc</a>
                   <a href="/admin/dangky" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Đăng ký tài khoản</a>
                   <a href="/admin/add" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Thêm sản phẩm</a>
                   <a href="/admin/hienthi" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Thông tin sản phẩm</a>
                   <a href="/admin/taikhoan" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Tài Khoản</a>
                   <a href="/" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Trang chủ</a>
+                  <a href="/admin/addanhmuc" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Them danh muc</a>
 
                  
                 </div>

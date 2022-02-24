@@ -3,6 +3,9 @@ import { add } from "../api/post";
 import Navadmin from "./navadmin";
 import toastr from "toastr";
 import "toastr/build/toastr.min.css";
+import $ from 'jquery';
+import validate from 'jquery-validation';
+
 const addPost ={
     async print (){
         return /* html */ `
@@ -88,6 +91,7 @@ const addPost ={
         imgPost.addEventListener('change', function(e){
             imgPreview.src = URL.createObjectURL(e.target.files[0])
         });
+        
 
 
         formAdd.addEventListener('submit', async (e) => {
@@ -124,7 +128,40 @@ const addPost ={
             document.location.href="/admin/hienthi";
           
         })
-    }
+    },
+    afterRender() {
+        const formAdd = $("#form-add-post");
+        formAdd.validate({
+            rules: {
+                "title-post": {
+                    required: true,
+                    minlength: 5,
+                },
+            },
+            messages: {
+                "title-post": {
+                    required: "Bắt buộc phải nhập trường này anh ei",
+                    
+                },
+            },
+            submitHandler() {
+                async function addProduct() {
+                    add({
+
+                        name: document.querySelector("#name").value,
+
+                    }).then(async(res) => {
+                        document.location.href = "/#/admin/category";
+                        await reRender(Category, "#app");
+                    });
+                }
+
+                addProduct();
+            },
+        });
+    },
+
+    
 };
    
 

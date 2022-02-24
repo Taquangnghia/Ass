@@ -40,7 +40,7 @@ const gioHang = {
                     `).join("")}
                 </tbody>
                 <tfoot  class="pt-10">
-                    <tr class="pt-10"><td colspan="2" class="text-right pt-10">Tổng là:${tong}</td></tr>
+                    <tr class="pt-10"><td colspan="2" class="text-right pt-10">Tổng là:${tong}</td></tr>    
                    
                 </tfoot>
                

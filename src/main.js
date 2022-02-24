@@ -15,6 +15,9 @@ import bietThu from "./page/bietthu";
 import viDu from "./page/vidu";
 import viDu1 from "./page/vidu1";
 import viDu2 from "./page/vidu2";
+import danhMuc from "./admin/danhmuc";
+import addDanhmuc from "./admin/adddanhmuc";
+import editDanhmuc from "./admin/editdanhmuc";
 const router = new Navigo("/", { linksSelector: "a" });
 const render = async (content,id) =>{
     document.querySelector("#main").innerHTML = await content.print(id);
@@ -51,8 +54,8 @@ router.on({
     "/chitiet/giohang":()=>{
         render(gioHang);
     },
-    "/chungcu":()=>{
-        render(chungCu);
+    "/chungcu/:id":({data})=>{
+        render(chungCu,data.id);
     },
     "/bietthu":()=>{
         render(bietThu);
@@ -85,6 +88,15 @@ router.on({
     },
     "/vidu2/:id/edit":({data})=>{
         render(viDu2,data.id);
+    },
+    "/admin/danhmuc":()=>{
+        render(danhMuc);
+    },
+    "/admin/addanhmuc":()=>{
+        render(addDanhmuc);
+    },
+    "admin/edit/:id/editdanhmuc":({data})=>{
+        render(editDanhmuc,data.id);
     }
     
 });
